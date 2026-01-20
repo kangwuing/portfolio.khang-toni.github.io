@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ngo Minh Khang | Research Portfolio</title>
+    <title>Ngo Minh Khang | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Hiệu ứng Tooltip "hay hay" */
+        .tooltip { position: relative; display: inline-block; cursor: help; }
+        .tooltip .tooltiptext {
+            visibility: hidden; width: 200px; background-color: #1e293b; color: #fff;
+            text-align: center; border-radius: 8px; padding: 10px; position: absolute;
+            z-index: 1; bottom: 125%; left: 50%; margin-left: -100px; opacity: 0;
+            transition: opacity 0.3s; font-size: 0.75rem; line-height: 1.2; shadow: xl;
+        }
+        .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans selection:bg-blue-100 selection:text-blue-700">
 
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
-            <a href="#" class="font-bold text-xl tracking-tighter text-blue-600">KHANG.NGO</a>
+            <a href="#" class="font-bold text-xl tracking-tighter text-blue-600 italic">NM.KHANG</a>
             <div class="space-x-6 hidden md:flex font-medium text-xs uppercase tracking-wider">
-                <a href="#about" class="hover:text-blue-600 transition">Giới thiệu</a>
-                <a href="#education" class="hover:text-blue-600 transition">Học vấn</a>
-                <a href="#research" class="hover:text-blue-600 transition">Nghiên cứu</a>
-                <a href="#experience" class="hover:text-blue-600 transition">Kinh nghiệm</a>
-                <a href="#publications" class="hover:text-blue-600 transition">Ấn phẩm</a>
+                <a href="#about" class="hover:text-blue-600 transition text-slate-600">Giới thiệu</a>
+                <a href="#experience" class="hover:text-blue-600 transition text-slate-600">Kinh nghiệm</a>
+                <a href="#education" class="hover:text-blue-600 transition text-slate-600">Học vấn</a>
+                <a href="#publications" class="hover:text-blue-600 transition text-slate-600">Ấn phẩm</a>
             </div>
             <a href="CV.pdf" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition shadow-md">
-                Tải CV
+                Xem CV
             </a>
         </div>
     </nav>
@@ -29,11 +39,13 @@
     <section id="about" class="pt-32 pb-20 px-6 bg-gradient-to-b from-blue-50 to-white">
         <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
             <h1 class="text-5xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900">
-                Ngo Minh Khang [cite: 2]
+                Ngo Minh Khang
             </h1>
             <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-                Ứng viên Tiến sĩ Kỹ thuật Cơ khí tại <strong>Đại học Hanyang</strong>[cite: 6, 9]. 
-                Nghiên cứu viên tại <strong>CHAMP’s Lab</strong> với chuyên môn về Robotics, Computer Vision và Hệ thống tự động hóa thông minh[cite: 6, 55].
+                Ứng viên Tiến sĩ Kỹ thuật Cơ khí tại <span class="tooltip text-blue-600 font-bold">Đại học Hanyang
+                    <span class="tooltiptext">GPA đạt 4.31/4.5, nghiên cứu dưới sự dẫn dắt của Giáo sư Jonghun Yoon.</span>
+                </span>. 
+                Nghiên cứu viên tại CHAMP’s Lab chuyên sâu về Robotics và Computer Vision.
             </p>
             <div class="flex justify-center gap-6 text-2xl text-slate-400">
                 <a href="https://www.linkedin.com/in/ngominhkhang20032002/" target="_blank" class="hover:text-blue-600 transition"><i class="fa-brands fa-linkedin"></i></a>
@@ -43,127 +55,100 @@
         </div>
     </section>
 
-    <section id="education" class="py-20 max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Học vấn</h2>
-        <div class="space-y-6">
-            <div class="flex flex-col md:flex-row gap-4 p-8 bg-white rounded-3xl border border-slate-100 shadow-sm" data-aos="fade-up">
-                <div class="md:w-1/4 font-bold text-blue-600">2025 — Hiện tại [cite: 13]</div>
-                <div class="md:w-3/4">
-                    <h3 class="text-xl font-bold">Ứng viên Tiến sĩ Kỹ thuật Cơ khí </h3>
-                    <p class="text-slate-600 font-medium">Hanyang University, Korea </p>
-                    <p class="text-sm text-slate-500 mt-2 italic">GPA: 4.31 / 4.5 </p>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-4 p-8 bg-white rounded-3xl border border-slate-100 shadow-sm" data-aos="fade-up">
-                <div class="md:w-1/4 font-bold text-blue-600">2020 — 2024 [cite: 14]</div>
-                <div class="md:w-3/4">
-                    <h3 class="text-xl font-bold">Cử nhân Kỹ thuật Cơ khí [cite: 12]</h3>
-                    <p class="text-slate-600 font-medium">Đại học Bách Khoa TP.HCM (HCMUT) [cite: 11]</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="research" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-16 text-center" data-aos="fade-up">Lĩnh vực nghiên cứu [cite: 26-29]</h2>
-            <div class="grid md:grid-cols-4 gap-6 text-center">
-                <div class="p-6 border border-slate-700 rounded-2xl hover:bg-slate-800 transition" data-aos="zoom-in">
-                    <i class="fa-solid fa-microscope text-2xl text-blue-400 mb-4"></i>
-                    <p class="text-sm font-semibold">FEA & CFD Analysis</p>
-                </div>
-                <div class="p-6 border border-slate-700 rounded-2xl hover:bg-slate-800 transition" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fa-solid fa-robot text-2xl text-indigo-400 mb-4"></i>
-                    <p class="text-sm font-semibold">Robotics</p>
-                </div>
-                <div class="p-6 border border-slate-700 rounded-2xl hover:bg-slate-800 transition" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fa-solid fa-eye text-2xl text-emerald-400 mb-4"></i>
-                    <p class="text-sm font-semibold">Machine Vision</p>
-                </div>
-                <div class="p-6 border border-slate-700 rounded-2xl hover:bg-slate-800 transition" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fa-solid fa-brain text-2xl text-purple-400 mb-4"></i>
-                    <p class="text-sm font-semibold">Machine Learning</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="experience" class="py-24 max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-16 text-center" data-aos="fade-up">Kinh nghiệm nghiên cứu</h2>
+        <h2 class="text-3xl font-bold mb-16 text-center" data-aos="fade-up">Kinh nghiệm chuyên môn</h2>
         <div class="space-y-12">
             <div class="relative pl-8 border-l-2 border-blue-600" data-aos="fade-left">
                 <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
-                <h3 class="text-2xl font-bold">CHAMP's Lab [cite: 55]</h3>
-                <p class="text-blue-600 font-semibold mb-4 text-sm">Nghiên cứu viên toàn thời gian | 03/2025 – Hiện tại [cite: 56, 57]</p>
+                <h3 class="text-2xl font-bold">CHAMP's Lab</h3>
+                <p class="text-blue-600 font-semibold mb-4 text-sm">Nghiên cứu viên toàn thời gian | 03/2025 – Hiện tại</p>
                 <ul class="list-disc list-outside ml-4 space-y-3 text-slate-600 text-sm">
-                    <li>Hợp tác với <strong>KITECH</strong> phát triển hệ thống gắp vải bằng robot tích hợp thị giác máy và phân tích FEM.</li>
-                    <li>Làm việc cùng <strong>POSCO</strong> xây dựng mô hình AI phân đoạn hình ảnh hạt bột và giao diện GUI.</li>
-                    <li>Triển khai thuật toán nhận diện cử chỉ tay và khuôn mặt cho nền tảng <strong>SoulCube</strong>[cite: 60].</li>
+                    <li>Hợp tác với KITECH phát triển hệ thống gắp vải robot dựa trên thị giác máy và tối ưu hóa tuần tự kết hợp phân tích FEM.</li>
+                    <li>Phối hợp cùng POSCO xây dựng các mô hình AI phân đoạn hình ảnh hạt bột và giao diện người dùng (GUI).</li>
+                    <li>Triển khai thuật toán nhận diện cử chỉ tay cho nền tảng SoulCube.</li>
                 </ul>
             </div>
-            <div class="relative pl-8 border-l-2 border-slate-200" data-aos="fade-left">
+            <div class="relative pl-8 border-l-2 border-slate-200" data-aos="fade-left" data-aos-delay="100">
                 <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
-                <h3 class="text-2xl font-bold italic">IDEA Technology Corporation [cite: 69]</h3>
-                <p class="text-slate-500 font-semibold mb-4 text-sm">Thực tập sinh Thiết kế Cơ khí | 06/2023 – 08/2023 [cite: 70, 76]</p>
-                <p class="text-slate-600 text-sm">Thiết kế máy tạo hình tấm (sheet forming machine) 174 chi tiết theo tiêu chuẩn MISUMI[cite: 71]. Điểm đánh giá thực tập: 9/10[cite: 73].</p>
+                <h3 class="text-2xl font-bold italic text-slate-800">IDEA Technology Corporation</h3>
+                <p class="text-slate-500 font-semibold mb-4 text-sm">Thực tập sinh Thiết kế Cơ khí | 06/2023 – 08/2023</p>
+                <p class="text-slate-600 text-sm italic">Thiết kế máy tạo hình tấm 174 chi tiết (Tiêu chuẩn MISUMI). Điểm đánh giá: 9/10.</p>
             </div>
         </div>
     </section>
 
-    <section id="publications" class="py-24 bg-white border-y border-slate-100">
+    <section id="education" class="py-20 bg-white border-y border-slate-100">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Ấn phẩm khoa học</h2>
-            <div class="space-y-8">
-                <div class="p-6 bg-slate-50 rounded-2xl border-l-4 border-blue-600" data-aos="fade-up">
-                    <h4 class="font-bold text-lg mb-2 italic">"Vision-guided gripping process with minimizing folding for flexible fabric materials..." [cite: 32]</h4>
-                    <p class="text-sm text-slate-600">Journal: <strong>Robotics and Autonomous Systems</strong>, Volume 198 (2026).</p>
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Học vấn</h2>
+            <div class="space-y-6">
+                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-4" data-aos="fade-up">
+                    <div class="md:w-1/4 font-bold text-blue-600">2025 — Hiện tại</div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold">Ứng viên Tiến sĩ Kỹ thuật Cơ khí</h3>
+                        <p class="text-slate-600">Hanyang University, Korea</p>
+                    </div>
                 </div>
-                <div class="p-6 bg-slate-50 rounded-2xl border-l-4 border-indigo-600" data-aos="fade-up">
-                    <h4 class="font-bold text-lg mb-2 italic">"Data-driven vision and FEM-based sequential optimization for fold-minimized robotic fabric gripping" [cite: 39]</h4>
-                    <p class="text-sm text-slate-600">Conference: <strong>2025 IEEE International Conference on Big Data</strong>.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 max-w-6xl mx-auto px-6">
-        <div class="grid md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-2xl font-bold mb-8 flex items-center gap-2"><i class="fa-solid fa-trophy text-amber-500"></i> Giải thưởng</h2>
-                <ul class="space-y-4 text-sm">
-                    <li class="flex gap-4">
-                        <span class="font-bold text-blue-600">2024</span>
-                        <span>Giải bài báo xuất sắc (Best Paper Award) tại Hội nghị ICRESM 2024[cite: 77].</span>
-                    </li>
-                    <li class="flex gap-4">
-                        <span class="font-bold text-blue-600">2023</span>
-                        <span>Top 20 dự án tiềm năng cuộc thi BK Innovation (Skeleton support, Delivery robot)[cite: 80].</span>
-                    </li>
-                    <li class="flex gap-4">
-                        <span class="font-bold text-blue-600">2025-29</span>
-                        <span>Học bổng 50% học phí Đại học Hanyang[cite: 84].</span>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="text-2xl font-bold mb-8 flex items-center gap-2"><i class="fa-solid fa-certificate text-emerald-500"></i> Chứng chỉ [cite: 44]</h2>
-                <div class="flex flex-wrap gap-3">
-                    <span class="px-4 py-2 bg-slate-100 rounded-lg text-xs font-semibold">FEA & CFD (Cornell Univ / ANSYS) </span>
-                    <span class="px-4 py-2 bg-slate-100 rounded-lg text-xs font-semibold">Python (U. Michigan) </span>
-                    <span class="px-4 py-2 bg-slate-100 rounded-lg text-xs font-semibold">MATLAB (Vanderbilt Univ) </span>
+                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col md:flex-row gap-4" data-aos="fade-up">
+                    <div class="md:w-1/4 font-bold text-slate-400">2020 — 2024</div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold">Cử nhân Kỹ thuật Cơ khí</h3>
+                        <p class="text-slate-600">Đại học Bách Khoa TP.HCM (HCMUT)</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-12 border-t border-slate-200 text-center">
-        <p class="text-slate-500 text-sm mb-4">© 2026 - Designed by Ngo Minh Khang | Hanyang University [cite: 2, 8]</p>
-        <p class="text-xs text-slate-400 italic">"Engineering the future with AI & Robotics"</p>
+    <section id="publications" class="py-24 max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Ấn phẩm khoa học</h2>
+        <div class="space-y-6">
+            <div class="p-6 bg-white rounded-2xl border-l-4 border-blue-600 shadow-sm" data-aos="fade-up">
+                <span class="text-xs font-bold text-blue-600 uppercase">Journal - April 2026</span>
+                <h4 class="font-bold text-lg my-2 italic">"Vision-guided gripping process with minimizing folding for flexible fabric materials..."</h4>
+                <p class="text-sm text-slate-500">Robotics and Autonomous Systems, Vol 198.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl border-l-4 border-indigo-600 shadow-sm" data-aos="fade-up">
+                <span class="text-xs font-bold text-indigo-600 uppercase">Conference - 2025</span>
+                <h4 class="font-bold text-lg my-2 italic">"Data-driven vision and FEM-based sequential optimization for fold-minimized robotic fabric gripping"</h4>
+                <p class="text-sm text-slate-500">IEEE International Conference on Big Data.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl border-l-4 border-slate-400 shadow-sm" data-aos="fade-up">
+                <span class="text-xs font-bold text-slate-500 uppercase">Conference - 2024</span>
+                <h4 class="font-bold text-lg my-2 italic">"Structural Modifications for Vibration-Assisted Spin Coating..."</h4>
+                <p class="text-sm text-slate-500">ICRESM 2024, Springer Cham.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-10">Kỹ năng chuyên môn (Rê chuột để xem)</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="tooltip px-6 py-2 bg-slate-800 rounded-full border border-slate-700 hover:bg-blue-600 transition cursor-default">
+                    FEA & CFD
+                    <span class="tooltiptext">Chứng chỉ Cornell University endorsed by ANSYS. [cite: 50, 51]</span>
+                </span>
+                <span class="tooltip px-6 py-2 bg-slate-800 rounded-full border border-slate-700 hover:bg-blue-600 transition cursor-default">
+                    Python
+                    <span class="tooltiptext">Chứng chỉ từ University of Michigan. [cite: 53]</span>
+                </span>
+                <span class="tooltip px-6 py-2 bg-slate-800 rounded-full border border-slate-700 hover:bg-blue-600 transition cursor-default">
+                    MATLAB
+                    <span class="tooltiptext">Chứng chỉ từ Vanderbilt University. [cite: 54]</span>
+                </span>
+                <span class="tooltip px-6 py-2 bg-slate-800 rounded-full border border-slate-700 hover:bg-blue-600 transition cursor-default">
+                    Deep Learning
+                    <span class="tooltiptext">Triển khai mô hình phân đoạn hình ảnh bột cho POSCO. [cite: 59]</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-slate-200">
+        <p class="text-slate-400 text-sm">© 2026 - Designed by Ngo Minh Khang | Hanyang University</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-    </script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
